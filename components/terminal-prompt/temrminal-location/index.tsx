@@ -2,7 +2,7 @@
 import * as React from 'react';
 
 // ANCHOR Components
-import { Text } from './node_modules/components/reusables/Text';
+import { Text } from 'components/reusables/Text';
 
 // ANCHOR Styles
 import { HOSTNAME } from './styles';
