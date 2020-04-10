@@ -22,7 +22,21 @@ export function AppHead({ title, description, children }: IProps) {
       <meta name="theme-color" content="#5B36C9" />
       {/* Fira Code */}
       <link
-        href="https://fonts.googleapis.com/css?family=Fira+Code:400,700&display=swap"
+        rel="preload"
+        as="font"
+        type="font/woff2"
+        href="./fonts/fira-code-v8-latin-regular.woff2"
+        crossOrigin="anonymous"
+      />
+      <link
+        rel="preload"
+        as="font"
+        type="font/woff2"
+        href="./fonts/fira-code-v8-latin-700.woff2"
+        crossOrigin="anonymous"
+      />
+      <link
+        href="./font.css"
         rel="stylesheet"
       />
       {/* Web Manifest */}
