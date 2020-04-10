@@ -2,7 +2,7 @@
 import * as React from 'react';
 
 // ANCHOR Styletron
-import { styled, StyleObject } from 'styletron-react';
+import { useStyletron, StyleObject } from 'styletron-react';
 
 interface IProps {
   style: StyleObject;
@@ -10,11 +10,11 @@ interface IProps {
 }
 
 export const Text = React.memo(({ style, value }: IProps) => {
-  const TextStyled = styled('pre', style);
+  const [css] = useStyletron();
 
   return (
-    <TextStyled>
+    <pre className={css({ margin: '0px', ...style })}>
       {value}
-    </TextStyled>
+    </pre>
   );
 });
