@@ -21,7 +21,7 @@
     "@zeit/next-source-maps": "latest",
     "date-fns": "latest",
     "dotenv": "latest",
-    "next": "^9.2.2",
+    "next": "^11.1.0",
     "next-offline": "^5.0.0",
     "normalize.css": "latest",
     "react": "latest",
